@@ -1,0 +1,145 @@
+.Navbar {
+    height: 56px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    /* position: fixed; */
+    width: 100%;
+    padding: 0 20px;
+}
+.nav_row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.nav_logo{
+    padding-right: 10px;
+}
+.span{
+    position: relative;
+    display: inline-flex;
+}
+.nav_logo .span::before {
+    content: "";
+    display: flex;
+    align-self: center;
+    width: 5px;
+    height: 5px;
+    background: #00BAFC;
+    z-index: 1;
+    position: absolute;
+    top: 5.2px;
+    left: 1.4px;
+    border-radius: 50%;
+}
+.nav_list{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+.nav_list > li {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    margin-right: 32px;
+    flex: 0 1 auto;
+    cursor: pointer;
+    transition: 0.1s all;
+}
+.nav_list > li:hover{
+    opacity: 0.70;
+}
+.nav_list a{
+    color: #000000;
+}
+.nav_list > li:last-child{
+    margin-right: 24px;
+}
+.btn{
+    padding: 8px 16px;
+    background: #00BAFC;
+    color: white;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 24px;
+    border: none;
+    border-radius: 5px;
+    flex: 0 1 auto;
+    transition: 0.3s all;
+}
+.btn:hover{
+    background: #00b9fc9f;
+}
+.menu{
+    /* border: 1px solid red; */
+    /* width: 30px;
+    height: 30px; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    display: none;
+    z-index: 999;
+}
+.menu > span{
+    display: block;
+    width: 26px;
+    height: 3px;
+    background-color: #000000;
+}
+.line{
+    margin: 4px 0;
+}
+.btn a{
+    transition: 0.3s all;
+    color: white;
+}
+.btn a:hover{
+    color: white;
+}   
+.toggle_menu{
+    width: 100%;
+    height: 300px;
+    background: #00BAFC;
+    position: absolute;
+    top: -400px;
+    color: white;
+    z-index: 99;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    transition: all .3s linear;
+    
+}
+.toggle_list .btn{
+    background: none;
+    border: 1px solid #ffffff;
+}
+.toggle_list .btn a{
+    color: #ffffff;
+}
+.toggle_list{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.toggle_list li a{
+    color: white;
+}
+.toggledMenu{
+    position: absolute;
+    top: 0 !important;
+}
+@media  (max-width: 1000px) {
+    .nav_list{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+}

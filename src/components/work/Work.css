@@ -1,0 +1,150 @@
+.Work{
+    padding: 56px 20px 55px;
+}
+.Work .Container{
+    max-width: 860px;
+    margin: 0 auto;
+} 
+.l{
+    padding-left: 10px;
+}
+.Work__title{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.Work__title h1{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 130%;
+    color: #000000;
+}
+.Work__title p{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 16px 0 24px;
+    width: 90%;
+}
+
+.headers__row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.header__right h3{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 130%;
+    color: #000000;
+}
+
+.header__right p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 8px;
+    align-self: center;
+    justify-items: center;
+    justify-self: center;
+}
+.blqanot{
+    background-image: url(../images/blaqnot.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    background-position: 10;
+    min-width: 320px;
+    min-height: 280px;
+}
+.qalendar{
+    background-image: url(../images/qalendar.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    background-position: 10 10;
+    min-width: 320px;
+    min-height: 280px;
+}
+.alarm{
+    background-image: url(../images/alarm.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    background-position: center;
+    min-width: 320px;
+    min-height: 280px;
+}
+.cup{
+    background-image: url(../images/cup.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    object-fit: cover;
+    background-position: 10 10;
+    min-width: 320px;
+    min-height: 280px;
+}
+.boyPictur{
+    background-image: url(../images/boyPucture.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    background-position: center;
+    min-width: 320px;
+    min-height: 280px;
+}
+.r{
+    width: 60%;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button .btn{
+    margin:  46px auto 0;
+}
+a{
+    color: #00BAFC;
+}
+#block{
+    display: none;
+}
+@media (max-width: 839px) {
+
+    .headers__row{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    #none{
+        display: none;
+    }
+    #block{
+        display: block;
+    }
+    .margin{
+        margin: 22px 0;
+    }
+    .blqanot{
+        background-size: contain;
+    }
+    .cup{
+        min-height: 190px;
+    }
+}
+@media (max-width: 550px) {
+    .Work__title p{
+        font-size: 13px;
+        line-height: 23px;
+    }
+}
