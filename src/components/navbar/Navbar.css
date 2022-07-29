@@ -73,7 +73,7 @@
 .btn:hover{
     background: #00b9fc9f;
 }
-.menu{
+#menu{
     /* border: 1px solid red; */
     /* width: 30px;
     height: 30px; */
@@ -85,12 +85,25 @@
     display: none;
     z-index: 999;
 }
-.menu > span{
+#menu > span{
     display: block;
     width: 26px;
     height: 3px;
     background-color: #000000;
+    transition: .2s all ease-in-out;
 }
+#menu.active > span:nth-child(1) {
+    background: #ffffff;
+    transform: rotate(45deg);
+}
+#menu.active > span:nth-child(2) {
+    display: none;
+}   
+#menu.active > span:nth-child(3) {
+    background: #ffffff;
+    transform: translateY(-3px) rotate(-48deg);
+}
+
 .line{
     margin: 4px 0;
 }
@@ -101,7 +114,7 @@
 .btn a:hover{
     color: white;
 }   
-.toggle_menu{
+#toggle_menu{
     width: 100%;
     height: 300px;
     background: #00BAFC;
@@ -139,7 +152,7 @@
     .nav_list{
         display: none;
     }
-    .menu{
+    #menu{
         display: block;
     }
 }

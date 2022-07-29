@@ -1,19 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Navbar.css'
 
 export default function Navbar() {
 
-    // const elmenu = document.querySelector(".menu")
-
-    // elmenu.addEventListener("click", (e)=> (
-    //     console.log(e)
-    // ))
+    const [menu, setMenu] = useState(false);
 
     return (
         <div className="Navbar">
             <div className=' container'>
                 <div className="nav_row">
-                    <div className="toggle_menu">
+                    <div id='toggle_menu' className={ menu === true ? 'toggledMenu' : ''}>
                         <div className="toggle_list">
                             <li><a href="#Hero"> Bosh sahifa</a></li>
                             <li><a href="#Services"> Xizmatlar</a></li>
@@ -36,7 +32,7 @@ export default function Navbar() {
                         <li><a href="#Footer"> Kontaktlar</a></li>
                         <button className='btn' type='button'><a href="tel: +998 90 921 37 11"> +998 90 921 37 11 </a></button>  
                     </div>
-                    <div className="menu">
+                    <div onClick={ () => setMenu(!menu) } id='menu' className={ menu === true ? 'active' : 'menu'}>
                             <span></span>
                             <span className='line'></span>
                             <span></span>
