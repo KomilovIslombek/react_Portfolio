@@ -131,6 +131,11 @@
 .toggle_list .btn{
     background: none;
     border: 1px solid #ffffff;
+    transition: .2s all linear;
+}
+.toggle_list .btn:hover{
+    background: black;
+    border: 1px solid #000000;
 }
 .toggle_list .btn a{
     color: #ffffff;
@@ -143,6 +148,10 @@
 }
 .toggle_list li a{
     color: white;
+    transition: .2s ease-in-out;
+}
+.toggle_list li a:hover{
+    color: #000000;
 }
 .toggledMenu{
     position: absolute;
